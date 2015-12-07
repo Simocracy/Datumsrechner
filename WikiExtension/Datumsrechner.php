@@ -25,7 +25,7 @@ function wfDRechnerSetup( Parser $parser ) {
 
 /*
  * PHP-Berechnungen
- * (c) Gobo77 2013, 2015
+ * Gobo77 2013, 2015
  *
  * $input: Eingabe <drechner> input </drechner>
  * $args[]: Argumente <drechner dir="rl">input</drechner>
@@ -194,7 +194,7 @@ function wfDRechnerRender( $input, array $args, Parser $parser, PPFrame $frame )
 /*
  * Funktionen übersetzt aus Java aus dem Simocracy PostWriter
  * Basierend auf altem PHP-Datumsrechner von Fluggi
- * (c) Fluggi, Gobo77 2012-2013
+ * Fluggi, Gobo77 2012-2013
  */
  
 function rlSy($rlTag, $rlMon, $rlJahr, $rlStu, $rlMin){
