@@ -6,39 +6,45 @@ MediaWiki-Extension für den Datumsrechner.
 
 ### Nutzung
 
+Rechnet aktuelle RL-Zeit um in SY-Zeit:
 ```
 Variante 1: <drechner />
 Variante 2: <drechner></drechner> 
 ```
-Rechnet aktuelle RL-Zeit um in SY-Zeit.
 
+
+Rechnet beliebiges RL-Datum im angegebenen Format um in SY-Zeit:
 ```
 <drechner>YYYY-MM-DD HH:MM</drechner>
 <drechner>YYYY-MM-DD</drechner>
 <drechner>DD.MM.YYYY</drechner> 
 ```
-Rechnet beliebiges RL-Datum im angegebenen Format um in SY-Zeit.
 
+
+Ausgabe der Eingabe als Tooltip:
 ```
 <drechner eing="j" />
 ```
-Ausgabe der Eingabe als Tooltip.
 
+
+Rechnet SY-Datum in RL-Datum um:
 ```
 <drechner dir="rl">YYYY-MM-DD</drechner>
 ```
-Rechnet SY-Datum in RL-Datum um.
 
+
+Ausgabe ohne Uhrzeit:
 ```
 <drechner day="j">YYYY-MM-DD</drechner>
 ```
-Ausgabe ohne Uhrzeit.
 
+
+Nutzungsmögilchkeit mittels Parserfunktion:
 ```
 {{#tag:drechner|YYYY-MM-DD}}
 {{#tag:drechner|YYYY-MM-DD|dir=rl|day=j}} 
 ```
-Nutzungsmögilchkeit mittels Parserfunktion.
+
 
 ### Changelog
 Version 4.0:
