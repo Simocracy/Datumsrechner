@@ -64,14 +64,18 @@ Volle Dokumentation siehe http://simocracy.de/Hilfe:Datumsrechner
 
 Stellt eine HTML-Seite zur Verfügung, auf der das Datum umgerechnet werden kann.
 
-#### rlSy($rlTag, $rlMon, $rlJahr, $rlStu, $rlMin)
+
+##### rlSy($rlTag, $rlMon, $rlJahr, $rlStu, $rlMin)
 Rechnet RL-Datum in ein SY-Datum um. Angabe Tag, Monat, Jahr, Stunde und Minute als int-Werte. Es muss zudem vor Aufruf der Funktion geprüft werden, dass die jeweiligen Angaben valide sind, da die Funktion lediglich umrechnet und nicht auf korrekte Eingaben prüft. Müsste rein theoretisch auch mit Angaben funktionieren, die vor Festlegung der Simocracy-Zeitrechnung (Oktober 2008) liegen, jedoch nicht getestet.
 
-#### syRl($syTag, $syMon, $syJahr, $syStu, $syMin)
+
+##### syRl($syTag, $syMon, $syJahr, $syStu, $syMin)
 Rechnet SY-Datum in ein RL-Datum um. Angabe Tag, Monat, Jahr, Stunde und Minute als int-Werte. Es muss zudem vor Aufruf der Funktion geprüft werden, dass die jeweiligen Angaben valide sind, da die Funktion lediglich umrechnet und nicht auf korrekte Eingaben prüft. Müsste rein theoretisch auch mit Angaben funktionieren, die vor Festlegung der Simocracy-Zeitrechnung (2020) liegen, jedoch nicht getestet.
 
-#### schaltjahrFeb($jahr)
+
+##### schaltjahrFeb($jahr)
 Ermittelt ob das angegebene Jahr ein Schaltjahr (nach gregorianischem Kalender, gültige Berechnung seit 1582).
 
-#### quartalErm($mon)
+
+##### quartalErm($mon)
 Ermittelt das Quartal, in dem der angegebene Monat (Nummer) liegt. Bei ungültiger Eingabe wird 0 zurückgegeben.
