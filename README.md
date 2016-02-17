@@ -1,6 +1,8 @@
 # Datumsrechner
 Verschiedene Implementationen des Simocracy-Datumsrechner in PHP
 
+Im PostWriter-Repository ist unter ```/src/de/simocracy/postwriter/datumsrechner/``` ein Datumrechner in Java enthalten.
+
 ## WikiExtension
 MediaWiki-Extension für den Datumsrechner. Basiert auf der Webpage und enthält zudem Umrechnungsfunktionen dieser. Nutzung dieser siehe unten.
 
