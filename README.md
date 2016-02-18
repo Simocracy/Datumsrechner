@@ -80,7 +80,7 @@ Rechnet SY-Datum in ein RL-Datum um. Angabe Tag, Monat, Jahr, Stunde und Minute 
 
 
 ##### schaltjahrFeb($jahr)
-Ermittelt ob das angegebene Jahr ein Schaltjahr (nach gregorianischem Kalender, gültige Berechnung seit 1582).
+Ermittelt ob das angegebene Jahr ein Schaltjahr ist (nach gregorianischem Kalender, gültige Berechnung seit 1582).
 
 
 ##### quartalErm($mon)
