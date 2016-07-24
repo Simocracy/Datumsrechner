@@ -7,7 +7,7 @@ namespace Simocracy
 	/// Datumsrechner für Simocracy.
 	/// 
 	/// Berechnungen sind möglich ab dem 1. Januar 2008 Realzeit = 1. Januar 1930.
-	/// Im Zeitraum von Januar 2008 bis September 2008 (= 1930 bis 2019) ist ein RL-Monat ein SY-Jahrzehnt.
+	/// Im Zeitraum von Januar 2008 bis September 2008 (= 1930 bis 2019) ist ein RL-Monat ein SY-Jahrzehnt, was jedoch nur als inoffizielle Angabe zu verstehen ist!
 	/// Der 1. Januar 2009 Realzeit ist per Definition 1. Januar 2021 Simocracy-Zeit.
 	/// Ab 1. Oktober 2008 = 1. Januar 2020 sind 3 RL-Monate gemäß Spielregeln 1 SY-Jahr.
 	/// </summary>
@@ -28,6 +28,7 @@ namespace Simocracy
 
 		/// <summary>
 		/// Rechnet zwischen Realzeit und Simocracy-Zeit um.
+		/// Angaben vor dem 01.10.2008 Realzeit bzw. 01.01.2020 Spielzeit sind nur inoffiziell!
 		/// </summary>
 		/// <param name="date">Ausgangsdatum</param>
 		/// <param name="direction">Berechnungsrichtung</param>
@@ -46,7 +47,8 @@ namespace Simocracy
 		}
 
 		/// <summary>
-		/// Rechnet das angegebene RL-Datum in ein SY-Datum um
+		/// Rechnet das angegebene RL-Datum in ein SY-Datum um.
+		/// Angaben vor dem 01.10.2008 Realzeit sind nur inoffiziell!
 		/// </summary>
 		/// <param name="realDate">RL-Datum</param>
 		/// <returns>SY-Datum</returns>
@@ -130,6 +132,7 @@ namespace Simocracy
 
 		/// <summary>
 		/// Rechnet das angegebene SY-Datum in ein RL-Datum um
+		/// Angaben vor dem 01.01.2020 Spielzeit sind nur inoffiziell!
 		/// </summary>
 		/// <param name="simDate">SY-Datum</param>
 		/// <returns>RL-Datum</returns>
