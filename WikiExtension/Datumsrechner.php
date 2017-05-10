@@ -12,7 +12,7 @@ $wgExtensionCredits['parserhook'][] = array(
     'author' => 'Gerald Siegert', 
     'url' => 'http://simocracy.de/Hilfe:Datumsrechner', 
     'description' => 'Fügt einen Simocracy-Datumsrechner zum Wiki hinzu.',
-    'version'  => '4.1.0',
+    'version'  => '4.2.0',
 	'license-name' => "cc-by-sa",
 );
 
@@ -25,7 +25,7 @@ function wfDRechnerSetup( Parser $parser ) {
 
 /*
  * PHP-Berechnungen
- * Gobo77 2013, 2015
+ * Gobo77 2013, 2015, 2017
  *
  * $input: Eingabe <drechner> input </drechner>
  * $args[]: Argumente <drechner dir="rl">input</drechner>
@@ -34,6 +34,7 @@ function wfDRechnerSetup( Parser $parser ) {
  * dir="rl" : Richtung SY-RL
  * eing="j" : Ausgabe des Eingabedatums
  * day="j" : Ausgabe nur Zieldatum ohne Uhrzeit
+ * tar="n" : Ausgabe ohne Angabe "SY" oder "RL"
  *
  * Hinweise:
  * $richtung=1 : RL->SY, Standardfall, auch wenn was anderes angegeben wurde
@@ -180,7 +181,7 @@ function wfDRechnerRender( $input, array $args, Parser $parser, PPFrame $frame )
 		$eingabe = $eingabeTag . '.' . $eingabeMon . '.' . $eingabeJah . ' ' . $eingabeStu . ':' . $eingabeMin . ' ' . $ausgansRichtung;
 		$ausgabe = $ergebnis[0] . '.' . $ergebnis[1] . '.' . $ergebnis[2] . ' ';
 		if($args['day'] != 'j') $ausgabe = $ausgabe . $ergebnis[3] . ':' . $ergebnis[4] . ' ';
-		$ausgabe = $ausgabe . $zielRichtung;
+		if($args['tar'] != 'n') $ausgabe = $ausgabe . $zielRichtung;
 	}
 	
 	if($args['eing'] == 'j') $output = '<abbr title="' . $eingabe . '">' . $ausgabe . '</abbr>';
